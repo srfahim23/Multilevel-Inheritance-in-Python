@@ -42,7 +42,15 @@ Let's take a look at an example to understand how multilevel inheritance works i
             Dog.__init__(self, name, breed="Golden Retriver")        
             self.color = color
 
-
         def show_details(self):
             Dog.show_details(self)          
             print(f"color: {self.color}")
+
+In this example, we have three classes: Animal, Dog, adn GoldendRetriver. The Dog class inherits from the Animal class, and the GoldenRetriver class inherits from the Dog class.
+
+Now, when we create an object the GoldenRetriver class, it has access to all the attributes and methods of the Animal class and the Dog class. We can also see that the GoldenRetriver class has it's own attributes and methods that are specifiec to the class.
+
+    dog = GoldenRetriver("Max", "Golden")
+    dog.show_details()
+
+    
